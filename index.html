@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Selamat Hari Raya Idul Fitri 1442 H</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="fonts/css/all.css">
+</head>
+
+<body>
+	<!-- Template HTML -->
+	<div class="frame">
+		<div class="circle"></div>
+		<div class="line left"></div>
+		<div class="line right"></div>
+		<div class="bracket left"></div>
+		<div class="bracket right"></div>
+		<div class="small top"><span class="first-letter">S</span>elamat</div>
+		<div class="big">Idul Fitri 1443 H</div>
+		<div class="small bottom">Mohon Maaf Lahir & Bathin</div>
+		<div class="hide top"></div>
+		<div class="hide bottom"></div>
+		<div class="mosque">
+			<i class="fas fa-mosque"></i> <i class="fas fa-mosque"></i> <i class="fas fa-mosque"></i>
+			
+		</div>
+	</div>
+
+	<!-- Javascript -->
+	<script src='idulfitri.js'></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+	<script>
+		Swal.fire({
+			title: 'Masukan nama kamu?',
+			input: 'text',
+			inputAttributes: {
+				autocapitalize: 'off'
+			},
+			showCancelButton: true,
+			confirmButtonText: 'OK',
+			showLoaderOnConfirm: true
+			}).then((result) => {
+			if (result.value) {
+				Swal.fire({
+					title: 'Selamat Idul Fitri 1443 H',
+					html:
+						'السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ<br><br>'+
+`Haloo ${result.value}, <br><br> Ada banyak yang telah kita lalui selama setahun belakangan. Ada banyak canda, amarah, sakit hati atau janji yang belum ditepati. <br><br>Untuk itu saya ucapkan mohon maaf lahir dan batin. <br>Semoga dengan memohon maaf dan memaafkan kita menjadi pribadi yang lebih baik ke depannya. <br>"Selamat Hari Raya Idul Fitri 1443 H"<br><br>` +
+'TAQOBBALALLAHU MINNA WA MINKUM  BARAKALLAHU FIIKUM<br>'+
+
+'<br>وَ السَّلاَمُ عَلَيْكُمْ وَرَحْمَةُ الله وَبَرَكَاتُهُ' +
+						'<br><br> <a target=”_blank” href="https://saweria.co/putrodwi31">Kirim THR</a>  <b>Atau</b> ' +
+						'<a target=”_blank” href="https://saweria.co/putrodwi31">Ambil THR Kamu</a> ',
+					imageUrl: 'eid.png',
+					imageWidth: 400,
+					imageHeight: 200,
+				})
+			}
+		})
+	</script>
+</body>
+
+</html>
